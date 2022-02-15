@@ -1,0 +1,10 @@
+{
+  "name": "the-component-monorepo",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "build": "pnpm -r run build",
+    "clean": "pnpm -r exec -- rm -rf node_modules"
+  }
+}
