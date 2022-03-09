@@ -1,26 +1,25 @@
-const vue = require('@vitejs/plugin-vue')
-const path = require('path')
-const { defineConfig } = require('vite')
-const pkg = require('./package.json')
-const { pascalCase } = require('change-case')
+import path from 'path'
+import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite'
+import { pascalCase } from 'change-case'
+import libInjectCss from './libInjectCss'
 
-const fileName = pkg.name
+const fileName = 'the-component'
 const libName = pascalCase(fileName)
 
 module.exports = defineConfig({
-  plugins: [vue()],
+  plugins: [vue(), libInjectCss()],
   build: {
-    cssCodeSplit: true,
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: libName,
-      fileName: (format) => `${fileName}.${format}.js`
+      fileName: format => `${fileName}.${format}.js`,
     },
     rollupOptions: {
       external: ['vue', '@vueuse/core'],
       output: {
-        globals: { vue: 'Vue', '@vueuse/core': 'VueUse' }
-      }
-    }
-  }
+        globals: { 'vue': 'Vue', '@vueuse/core': 'VueUse' },
+      },
+    },
+  },
 })

@@ -1,19 +1,20 @@
 <script setup lang="ts">
-import { PropType } from "vue";
-import { useMouse } from "@vueuse/core";
+import type { PropType } from 'vue'
+import { useMouse } from '@vueuse/core'
 
 const props = defineProps({
-  asdf: { type: String as PropType<string>, default: "" },
-});
-const { x, y } = useMouse();
+  asdf: { type: String as PropType<string>, default: '' },
+})
+const { x, y } = useMouse()
 
-type asdf = {
-  key: string;
-};
+interface asdf {
+  key: string
+}
 
 const a: asdf = {
-  key: "123",
-};
+  key: '123',
+}
+
 </script>
 
 <template>
