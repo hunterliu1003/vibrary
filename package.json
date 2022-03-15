@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "pnpm -r --parallel run dev",
     "build": "pnpm -r run build",
-    "lint": "eslint . --ext=.ts,.vue"
+    "lint": "eslint . --ext=.ts,.vue --fix"
   },
   "dependencies": {
     "vue": "^3.2.31"

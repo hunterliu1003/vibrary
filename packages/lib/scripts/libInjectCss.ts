@@ -17,11 +17,11 @@ export default function libInjectCss(): PluginOption {
 
     apply: 'build',
 
-    configResolved(resolvedConfig: ResolvedConfig) {
+    configResolved(resolvedConfig) {
       viteConfig = resolvedConfig
     },
 
-    transform(code: string, id: string) {
+    transform(code, id) {
       if (fileRegex.test(id)) {
         css.push(code)
         return {
@@ -29,10 +29,9 @@ export default function libInjectCss(): PluginOption {
         }
       }
       if (
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-expect-error
-        id.includes(viteConfig.build.lib.entry)
-      ) {
+        viteConfig.build.lib
+         && 'entry' in viteConfig.build.lib
+         && id.includes(viteConfig.build.lib.entry)) {
         return {
           code: `${code}
           ${template}`,
@@ -41,7 +40,7 @@ export default function libInjectCss(): PluginOption {
       return null
     },
 
-    async writeBundle(_: any, bundle: any) {
+    async writeBundle(_, bundle) {
       for (const file of Object.entries(bundle)) {
         const { root } = viteConfig
         const outDir: string = viteConfig.build.outDir || 'dist'

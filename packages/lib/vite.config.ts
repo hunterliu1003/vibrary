@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import { defineConfig } from 'vite'
 import { pascalCase } from 'change-case'
 import dts from 'vite-plugin-dts'
-import libInjectCss from './libInjectCss'
+import libInjectCss from './scripts/libInjectCss'
 
 const fileName = 'the-component'
 const libName = pascalCase(fileName)
