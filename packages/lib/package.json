@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "module": "./dist/the-component.es.js",
   "main": "./dist/the-component.umd.js",
-  "types": "./dist/the-component.d.ts",
+  "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/the-component.es.js",
@@ -17,7 +17,7 @@
     "src"
   ],
   "scripts": {
-    "dev": "vite",
+    "dev": "vue-tsc --noEmit && vite build -w",
     "build": "vue-tsc --noEmit && vite build"
   }
 }
