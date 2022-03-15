@@ -1,0 +1,11 @@
+{
+  "name": "@vue-final/the-component-example",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@vue-final/the-component": "workspace:^0.0.0"
+  }
+}

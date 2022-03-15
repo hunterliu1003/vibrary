@@ -27,6 +27,12 @@ importers:
       vite: 2.8.6
       vue-tsc: 0.32.1_typescript@4.6.2
 
+  packages/examples:
+    specifiers:
+      '@vue-final/the-component': workspace:^0.0.0
+    dependencies:
+      '@vue-final/the-component': link:../lib
+
   packages/lib:
     specifiers: {}
 
