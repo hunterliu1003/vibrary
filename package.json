@@ -3,7 +3,9 @@
   "scripts": {
     "dev": "pnpm -r --parallel run dev",
     "build": "pnpm -r run build",
-    "lint": "eslint . --ext=.ts,.vue --fix"
+    "lint": "eslint . --ext=.ts,.vue --fix",
+    "clean": "pnpm -r exec -- rm -rf node_modules && rm -rf node_modules",
+    "postinstall": "pnpm build"
   },
   "dependencies": {
     "vue": "^3.2.31"
