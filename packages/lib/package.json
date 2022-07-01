@@ -18,6 +18,8 @@
   ],
   "scripts": {
     "dev": "vue-tsc --noEmit && vite build -w",
-    "build": "vue-tsc --noEmit && vite build"
+    "build": "vue-tsc --noEmit && vite build",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   }
 }

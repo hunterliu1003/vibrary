@@ -14,7 +14,6 @@ interface asdf {
 const a: asdf = {
   key: '123',
 }
-
 </script>
 
 <template>
