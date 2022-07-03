@@ -5,7 +5,7 @@ import { pascalCase } from 'change-case'
 import dts from 'vite-plugin-dts'
 import libInjectCss from './scripts/libInjectCss'
 
-const fileName = 'the-component'
+const fileName = 'index'
 const libName = pascalCase(fileName)
 module.exports = defineConfig({
   plugins: [vue(), dts(), libInjectCss()],
@@ -21,5 +21,8 @@ module.exports = defineConfig({
         globals: { 'vue': 'Vue', '@vueuse/core': 'VueUse' },
       },
     },
+  },
+  test: {
+    include: ['test/**/*.test.ts'],
   },
 })
