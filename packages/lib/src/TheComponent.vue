@@ -3,25 +3,16 @@ import type { PropType } from 'vue'
 import { useMouse } from '@vueuse/core'
 
 const props = defineProps({
-  asdf: { type: String as PropType<string>, default: '' },
+  msg: { type: String as PropType<string>, default: '' },
 })
 const { x, y } = useMouse()
-
-interface asdf {
-  key: string
-}
-
-const a: asdf = {
-  key: '123',
-}
 </script>
 
 <template>
   <div class="the-component">
-    <h1>This is a component use @vueuse/core</h1>
+    <h1>{{ props.msg }}</h1>
+    <h2>This is a component use @vueuse/core</h2>
     <span>x: {{ x }}, y: {{ y }}</span>
-    <p>{{ a.key }}</p>
-    <p>{{ props.asdf }}</p>
   </div>
 </template>
 

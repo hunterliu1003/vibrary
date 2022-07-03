@@ -24,5 +24,9 @@ module.exports = defineConfig({
   },
   test: {
     include: ['test/**/*.test.ts'],
+    environment: 'happy-dom',
+    deps: {
+      inline: ['@vue', '@vueuse', '@vue-final/the-component'],
+    },
   },
 })
