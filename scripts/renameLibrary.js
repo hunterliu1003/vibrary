@@ -18,7 +18,7 @@ prompt.start()
 
   replace({
     files: '**/*',
-    from: oldName,
+    from: new RegExp(`${oldName}`, 'g'),
     to: newName,
   })
 })()
