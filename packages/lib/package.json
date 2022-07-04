@@ -21,5 +21,8 @@
     "build": "vue-tsc --noEmit && vite build",
     "test": "vitest",
     "coverage": "vitest run --coverage"
+  },
+  "peerDependencies": {
+    "@vueuse/core": "^8.7.5"
   }
 }
