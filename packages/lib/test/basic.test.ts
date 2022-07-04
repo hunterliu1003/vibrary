@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { mount } from '@vue/test-utils'
-import { TheComponent } from '@vue-final/the-component'
+import { TheComponent } from '../src'
 
 describe('tests', () => {
   it('should works', () => {
