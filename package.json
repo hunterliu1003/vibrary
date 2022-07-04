@@ -11,7 +11,6 @@
     "rename-lib": "node scripts/renameLibrary.js"
   },
   "dependencies": {
-    "@vue-final/the-component": "workspace:*",
     "vue": "^3.2.37"
   },
   "devDependencies": {

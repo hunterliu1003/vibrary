@@ -43,9 +43,9 @@ importers:
 
   packages/examples:
     specifiers:
-      hunter-alpha: workspace:*
+      '@vue-final/the-component': workspace:*
     dependencies:
-      hunter-alpha: link:../lib
+      '@vue-final/the-component': link:../lib
 
   packages/lib:
     specifiers: {}
