@@ -4,13 +4,13 @@
     "preinstall": "npx only-allow pnpm",
     "dev": "pnpm -r --parallel run dev",
     "build": "pnpm -r run build",
-    "test": "pnpm --filter @vue-final/the-component run test",
-    "coverage": "pnpm --filter @vue-final/the-component run coverage",
+    "test": "pnpm --filter vue-3-lib-template run test",
+    "coverage": "pnpm --filter vue-3-lib-template run coverage",
     "lint": "eslint . --ext=.ts,.vue --fix",
     "clean": "pnpm -r exec -- rm -rf node_modules && rm -rf node_modules",
     "postinstall": "pnpm build",
     "lib:rename": "node scripts/renameLibrary.js",
-    "lib:publish": "pnpm publish --no-git-checks --filter @vue-final/the-component",
+    "lib:publish": "pnpm publish --no-git-checks --filter vue-3-lib-template",
     "typecheck": "pnpm -r --parallel run typecheck"
   },
   "dependencies": {

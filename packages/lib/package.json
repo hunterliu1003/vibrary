@@ -1,5 +1,5 @@
 {
-  "name": "@vue-final/the-component",
+  "name": "vue-3-lib-template",
   "private": false,
   "version": "0.0.0",
   "source": "src/index.ts",

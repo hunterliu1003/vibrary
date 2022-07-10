@@ -6,6 +6,6 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@vue-final/the-component": "workspace:*"
+    "vue-3-lib-template": "workspace:*"
   }
 }

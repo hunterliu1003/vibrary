@@ -43,9 +43,9 @@ importers:
 
   packages/examples:
     specifiers:
-      '@vue-final/the-component': workspace:*
+      'vue-3-lib-template': workspace:*
     dependencies:
-      '@vue-final/the-component': link:../lib
+      'vue-3-lib-template': link:../lib
 
   packages/lib:
     specifiers: {}

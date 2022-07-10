@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { TheComponent } from '@vue-final/the-component'
+import { TheComponent } from 'vue-3-lib-template'
 </script>
 
 <template>
