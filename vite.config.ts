@@ -7,7 +7,7 @@ import libInjectCss from './scripts/libInjectCss'
 
 const fileName = 'index'
 const libName = pascalCase(fileName)
-module.exports = defineConfig({
+export default defineConfig({
   plugins: [vue(), dts(), libInjectCss()],
   build: {
     lib: {

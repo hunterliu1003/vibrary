@@ -20,10 +20,17 @@
       "vite/client",
       "vitest"
     ],
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "paths": {
+      "~/*": [
+        "src/*"
+      ]
+    }
   },
   "exclude": [
     "dist",
+    "docs",
+    "coverage",
     "node_modules"
   ]
 }

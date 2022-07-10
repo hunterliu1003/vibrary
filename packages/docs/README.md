@@ -1,1 +1,0 @@
-# Docs for the component library
