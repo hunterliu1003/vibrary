@@ -18,6 +18,6 @@ const { x, y } = useMouse()
 
 <style scoped>
 .the-component {
-  color: red;
+  color: #666;
 }
 </style>
