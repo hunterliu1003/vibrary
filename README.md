@@ -1,4 +1,4 @@
-# @vue-final/lib
+# vue-3-lib-template
 
 A starter template for generating Vue 3 components or composable functions libraries.
 
