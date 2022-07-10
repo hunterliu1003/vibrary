@@ -2,7 +2,8 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
     "@vue-final/the-component": "workspace:*"

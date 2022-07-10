@@ -20,7 +20,8 @@
     "dev": "vue-tsc --noEmit && vite build -w",
     "build": "vue-tsc --noEmit && vite build",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "typecheck": "vue-tsc --noEmit"
   },
   "peerDependencies": {
     "@vueuse/core": "^8.7.5"

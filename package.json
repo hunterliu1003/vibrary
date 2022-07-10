@@ -8,7 +8,9 @@
     "lint": "eslint . --ext=.ts,.vue --fix",
     "clean": "pnpm -r exec -- rm -rf node_modules && rm -rf node_modules",
     "postinstall": "pnpm build",
-    "rename-lib": "node scripts/renameLibrary.js"
+    "lib:rename": "node scripts/renameLibrary.js",
+    "lib:publish": "pnpm publish --no-git-checks --filter @vue-final/the-component",
+    "typecheck": "pnpm -r --parallel run typecheck"
   },
   "dependencies": {
     "vue": "^3.2.37"
