@@ -1,10 +1,13 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { useMouse } from '@vueuse/core'
 
-const props = defineProps({
-  msg: { type: String as PropType<string>, default: '' },
-})
+const props = defineProps<{
+  /**
+   * @description Here is description of this prop
+   */
+  msg?: string
+}>()
+
 const { x, y } = useMouse()
 </script>
 
