@@ -56,4 +56,4 @@ pnpm lib:publish
 pnpm typecheck
 ```
 
-4. That's all
+4. Happy coding!!
