@@ -19,8 +19,8 @@
   "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "dev": "pnpm run dev:lib && pnpm run dev:docs",
-    "build": "pnpm run build:lib && pnpm run build:docs",
+    "dev": "pnpm run dev:lib & pnpm run dev:docs",
+    "build": "pnpm run build:lib & pnpm run build:docs",
     "dev:lib": "vue-tsc --noEmit && vite build -w",
     "build:lib": "vue-tsc --noEmit && vite build",
     "dev:docs": "vite --config vite.config.docs.ts",
@@ -28,7 +28,7 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "lint": "eslint . --ext=.ts,.vue --fix",
-    "clean": "pnpm -r exec -- rm -rf node_modules && rm -rf node_modules",
+    "clean": "pnpm exec -- rm -rf node_modules dist docs coverage .cache",
     "rename": "node scripts/renameLibrary.js",
     "typecheck": "vue-tsc --noEmit",
     "postinstall": "pnpm build"
