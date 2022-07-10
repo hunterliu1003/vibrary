@@ -1,10 +1,11 @@
-const prompt = require('prompt')
-const replace = require('replace-in-file')
+import prompt from 'prompt'
+import replace from 'replace-in-file'
+import pack from '../package.json' assert {type: 'json'}
 
 prompt.start()
 
 ;(async () => {
-  const oldName = require('../packages/lib/package.json').name
+  const oldName = pack.name
   const { newName } = await prompt.get({
     properties: {
       newName: {
@@ -18,6 +19,7 @@ prompt.start()
 
   replace({
     files: '**/*',
+    ignore: ['scripts/**/*', 'README.md'],
     from: new RegExp(`${oldName}`, 'g'),
     to: newName,
   })
