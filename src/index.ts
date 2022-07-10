@@ -1,3 +1,3 @@
-import TheComponent from './TheComponent/TheComponent.vue'
+import TheComponent from './components/TheComponent/TheComponent.vue'
 
 export { TheComponent }

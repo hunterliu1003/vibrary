@@ -8,9 +8,9 @@ export default defineConfig({
     vue(),
     viteplay({
       // Path to extract components from to create dev pages for
-      components: './src/*/*.vue',
+      components: './src/components/*/*.vue',
       // Path to extract component examples from to put on each dev page
-      componentExamples: './src/*/examples/**/*.vue',
+      componentExamples: './src/components/*/examples/**/*.vue',
       base: '/dev',
     }),
   ],
