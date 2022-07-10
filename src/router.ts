@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-restricted-imports
 import { createRouter, createWebHistory } from 'vue-router'
 import { pages } from '@viteplay/vue/client'
 

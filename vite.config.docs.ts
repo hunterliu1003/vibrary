@@ -11,6 +11,7 @@ export default defineConfig({
       components: './src/*/*.vue',
       // Path to extract component examples from to put on each dev page
       componentExamples: './src/*/examples/**/*.vue',
+      base: '/dev',
     }),
   ],
   build: {
