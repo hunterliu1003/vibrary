@@ -56,4 +56,4 @@ pnpm lib:publish
 pnpm typecheck
 ```
 
-4. Happy coding!!
+## Happy coding!!
