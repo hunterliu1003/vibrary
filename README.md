@@ -1,56 +1,22 @@
-# vibrary
+# Vibrary
 
-A starter template for generating Vue 3 components or composable functions libraries.
+## Scaffolding Your First Vue 3 Library
 
-
-
-This is a published-ready repo, let you build your own Vue 3 library immediately.
-
-You can use `pnpm rename` script to overwrite the lib name you want.
-Then run `pnpm publish` script to publish the lib.
-
-## Tech stacks
-
-- pnpm
-- typescript
-- vue 3
-- vite
-- vitest
-- @vueuse/core
-
-## How to use
-
-You can create your own library by following these steps below:
-
-1. Click the [Use this template](https://github.com/vue-final/lib/generate) to create a new repo or clone the repo
-
-2. Right after you clone or copy the repo as a template. you can use a special script to rename the lib to your own lib name.
+With PNPM:
 
 ```bash
-pnpm i
-pnpm rename
-# You will get a prompt that ask you enter the library name you want
-# prompt: 
-# Enter the library name you want (e.g: my-library-name):  
+$ pnpm create vibrary
 ```
 
-3. There are other built-in scripts in the repo.
+Then follow the prompts!
+
+You can also directly specify the project name and the template you want to use via additional command line options. For example, to scaffold a Vite + Vue library, run:
 
 ```bash
-# Start dev server and rebuild lib on change
-pnpm dev
-# Build lib
-pnpm build
-# Run unit test
-pnpm test
-# Run unit test and display test coverage
-pnpm coverage
-# Lint
-pnpm lint
-# Clean up all node_modules
-pnpm clean
-# Run vue-tsc for each repo
-pnpm typecheck
+# pnpm
+pnpm create vibrary my-vue-library -- --template vue-ts
 ```
 
-## Happy coding!!
+Currently supported template presets include:
+
+- `vue-ts`

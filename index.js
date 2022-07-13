@@ -3,6 +3,7 @@
 // @ts-nocheck
 const fs = require('fs')
 const path = require('path')
+const replace = require('replace-in-file')
 // Avoids autoconversion to number of the project name by defining that the args
 // non associated with an option ( _ ) needs to be parsed as a string. See #4606
 const argv = require('minimist')(process.argv.slice(2), { string: ['_'] })
@@ -157,15 +158,21 @@ async function init() {
   }
 
   const files = fs.readdirSync(templateDir)
-  for (const file of files.filter((f) => f !== 'package.json')) {
+  for (const file of files) {
     write(file)
   }
 
+
+
   const pkg = require(path.join(templateDir, `package.json`))
+  const oldName = pkg.name
+  const newName = packageName || targetDir
 
-  pkg.name = packageName || targetDir
-
-  write('package.json', JSON.stringify(pkg, null, 2))
+  replace({
+    files: `${root}/*`,
+    from: new RegExp(`${oldName}`, "g"),
+    to: newName,
+  });
 
   const pkgInfo = pkgFromUserAgent(process.env.npm_config_user_agent)
   const pkgManager = pkgInfo ? pkgInfo.name : 'npm'
