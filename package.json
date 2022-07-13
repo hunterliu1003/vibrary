@@ -1,6 +1,6 @@
 {
   "name": "create-vibrary",
-  "version": "0.0.0-beta.2",
+  "version": "0.0.0",
   "license": "MIT",
   "author": "Hunter Liu",
   "bin": {
