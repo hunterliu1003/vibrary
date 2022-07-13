@@ -1,14 +1,13 @@
 # vite-vue-typescript-lib-starter
 
-A published-ready template for Vue 3 components or composable functions libraries. Let you build your own Vue 3 library immediately.
-
-## Tech stacks
+A published-ready template for Vue 3 components and composable functions library.
 
 - pnpm
 - typescript
 - vue 3
 - vite
 - vitest
+- viteplay for documentation
 - @vueuse/core
 
 ## Scripts

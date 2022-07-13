@@ -1,5 +1,15 @@
 # Vibrary
 
+A published-ready template for Vue 3 components and composable functions library.
+
+- pnpm
+- typescript
+- vue 3
+- vite
+- vitest
+- viteplay for documentation
+- @vueuse/core
+
 ## Scaffolding Your First Vue 3 Library
 
 With PNPM:
