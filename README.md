@@ -1,4 +1,4 @@
-# vue-3-lib-template
+# vibrary
 
 A starter template for generating Vue 3 components or composable functions libraries.
 
