@@ -1,19 +1,18 @@
 import path from 'path'
 import vue from '@vitejs/plugin-vue'
 import { defineConfig } from 'vite'
-import { pascalCase } from 'change-case'
 import dts from 'vite-plugin-dts'
 import libInjectCss from './scripts/libInjectCss'
 
-const fileName = 'index'
-const libName = pascalCase(fileName)
+const name = 'index'
+
 export default defineConfig({
   plugins: [vue(), dts(), libInjectCss()],
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: libName,
-      fileName: format => `${fileName}.${format}.js`,
+      name,
+      fileName: format => `${name}.${format}.js`,
     },
     rollupOptions: {
       external: ['vue', '@vueuse/core'],
