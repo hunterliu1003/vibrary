@@ -26,7 +26,7 @@ export default defineConfig({
     include: ['src/**/*.test.ts'],
     environment: 'happy-dom',
     deps: {
-      inline: ['@vue', '@vueuse', 'vue-3-lib-template'],
+      inline: ['@vue', '@vueuse', 'vibrary'],
     },
   },
 })
