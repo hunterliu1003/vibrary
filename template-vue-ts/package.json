@@ -17,7 +17,6 @@
     "dist"
   ],
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "dev": "pnpm run dev:lib & pnpm run dev:docs & pnpm run test",
     "build": "pnpm run build:lib & pnpm run build:docs",
     "dev:lib": "vue-tsc --noEmit && vite build -w",
