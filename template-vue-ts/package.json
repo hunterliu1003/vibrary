@@ -28,8 +28,7 @@
     "coverage": "vitest run --coverage",
     "lint": "eslint . --ext=.ts,.vue --fix",
     "clean": "pnpm exec -- rm -rf node_modules dist docs coverage .cache",
-    "typecheck": "vue-tsc --noEmit",
-    "postinstall": "pnpm build"
+    "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
     "vue": "^3.2.37",
