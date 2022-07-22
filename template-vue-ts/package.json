@@ -38,7 +38,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",
     "@types/node": "^18.0.0",
-    "@vitejs/plugin-vue": "^2.3.3",
+    "@vitejs/plugin-vue": "^3.0.1",
     "@viteplay/plugin": "^0.0.27",
     "@viteplay/vue": "^0.0.27",
     "@vue/test-utils": "^2.0.0",
@@ -47,7 +47,7 @@
     "happy-dom": "^6.0.0",
     "pnpm": "^7.5.2",
     "typescript": "^4.7.4",
-    "vite": "^3.0.0",
+    "vite": "^3.0.2",
     "vitest": "^0.18.0",
     "vue-tsc": "^0.38.5"
   },
