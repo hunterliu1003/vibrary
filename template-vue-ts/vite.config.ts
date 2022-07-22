@@ -28,7 +28,7 @@ export default defineConfig({
     include: ['src/**/*.test.ts'],
     environment: 'happy-dom',
     deps: {
-      inline: ['@vue', '@vueuse', 'hunter-test'],
+      inline: ['@vue', '@vueuse', 'vite-vue-typescript-lib-starter'],
     },
   },
 })
