@@ -16,7 +16,6 @@
   "files": [
     "dist"
   ],
-  "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "dev": "pnpm run dev:lib & pnpm run dev:docs & pnpm run test",
