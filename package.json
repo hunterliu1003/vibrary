@@ -1,6 +1,6 @@
 {
   "name": "create-vibrary",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "index.js",
   "bin": {
     "create-vibrary": "index.js",
