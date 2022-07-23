@@ -55,8 +55,9 @@ Currently supported template presets include:
 ## Release it!
 
 Vibrary
-- use [release-it](https://github.com/release-it/release-it) for version management and publish 
-- auto generate changelog file (e.g. CHANGELOG.md) with [@release-it/conventional-changelog](https://github.com/release-it/conventional-changelog) plugin
+- Use [release-it](https://github.com/release-it/release-it) for version management and publish 
+- Auto generate changelog file (e.g. CHANGELOG.md) with [@release-it/conventional-changelog](https://github.com/release-it/conventional-changelog) plugin
+  - Follow [Angular commit guidelines](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#commits)
 
 For example, to release a new version of your lib,
 run: 
