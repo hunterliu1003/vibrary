@@ -1,5 +1,8 @@
 node_modules
 ./**/node_modules
+./**/.cache
+./**/dist
+./**/docs
 ./template-vue-ts/node_modules
 ./template-vue-ts/.cache
 ./template-vue-ts/dist
