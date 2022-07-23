@@ -1,6 +1,6 @@
 {
   "name": "create-vibrary",
-  "version": "0.1.0",
+  "version": "0.2.2",
   "main": "index.js",
   "bin": {
     "create-vibrary": "index.js",
@@ -13,16 +13,18 @@
   "scripts": {
     "release": "release-it"
   },
-  "devDependencies": {
+  "dependencies": {
     "kolorist": "^1.5.0",
     "minimist": "^1.2.5",
     "prompts": "^2.4.1",
-    "replace-in-file": "^6.3.5",
-    "release-it": "^15.1.3",
-    "@release-it/conventional-changelog": "^5.0.0"
+    "replace-in-file": "^6.3.5"
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^5.0.0",
+    "release-it": "^15.1.3"
   },
   "engines": {
-    "node": ">=12.0.0"
+    "node": "^14.18.0 || >=16.0.0"
   },
   "repository": {
     "type": "git",
