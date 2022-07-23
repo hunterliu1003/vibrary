@@ -13,13 +13,15 @@
   "scripts": {
     "release": "release-it"
   },
-  "devDependencies": {
-    "@release-it/conventional-changelog": "^5.0.0",
+  "dependencies": {
     "kolorist": "^1.5.0",
     "minimist": "^1.2.5",
     "prompts": "^2.4.1",
-    "release-it": "^15.1.3",
     "replace-in-file": "^6.3.5"
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^5.0.0",
+    "release-it": "^15.1.3"
   },
   "engines": {
     "node": "^14.18.0 || >=16.0.0"
