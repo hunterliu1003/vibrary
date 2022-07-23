@@ -1,5 +1,12 @@
 
 
+## [0.2.1](https://github.com/hunterliu1003/vibrary/compare/v0.2.0...v0.2.1) (2022-07-23)
+
+
+### Bug Fixes
+
+* dependencies ([38372ba](https://github.com/hunterliu1003/vibrary/commit/38372ba911c35d82cd6302e1f010c49e163cfa64))
+
 # [0.2.0](https://github.com/hunterliu1003/vibrary/compare/v0.1.0...v0.2.0) (2022-07-23)
 
 
