@@ -1,5 +1,12 @@
 
 
+# [0.2.0](https://github.com/hunterliu1003/vibrary/compare/v0.1.0...v0.2.0) (2022-07-23)
+
+
+### Features
+
+* **template-vue-ts:** support release-it ([361ace9](https://github.com/hunterliu1003/vibrary/commit/361ace9e9989fe0c43ee689039a4495436c2b5ab))
+
 # [0.1.0](https://github.com/hunterliu1003/vibrary/compare/v0.0.6...v0.1.0) (2022-07-23)
 
 
