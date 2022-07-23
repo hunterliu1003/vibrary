@@ -9,11 +9,7 @@ const replace = require('replace-in-file')
 const argv = require('minimist')(process.argv.slice(2), { string: ['_'] })
 // eslint-disable-next-line node/no-restricted-require
 const prompts = require('prompts')
-const {
-  green,
-  cyan,
-  red
-} = require('kolorist')
+const { green, cyan, red, blue, yellow } = require('kolorist')
 
 const cwd = process.cwd()
 
@@ -25,7 +21,18 @@ const FRAMEWORKS = [
       {
         name: "vue-ts",
         display: "TypeScript",
-        color: cyan,
+        color: blue,
+      },
+    ],
+  },
+  {
+    name: "react",
+    color: cyan,
+    variants: [
+      {
+        name: "react",
+        display: "JavaScript",
+        color: yellow,
       },
     ],
   },
