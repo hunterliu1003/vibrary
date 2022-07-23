@@ -1,1 +1,5 @@
 node_modules
+template-*/node_modules
+template-*/.cache
+template-*/dist
+template-*/docs
