@@ -51,3 +51,32 @@ pnpm create vibrary my-vue-library -- --template vue-ts
 Currently supported template presets include:
 
 - `vue-ts`
+
+## Release it!
+
+Vibrary
+- use [release-it](https://github.com/release-it/release-it) for version management and publish 
+- auto generate changelog file (e.g. CHANGELOG.md) with [@release-it/conventional-changelog](https://github.com/release-it/conventional-changelog) plugin
+
+For example, to release a new version of your lib,
+run: 
+
+```bash
+pnpm release
+```
+
+Then follow the prompts!
+
+### Troubleshooting hints
+
+If you get an error when running `pnpm release`, you maybe miss the git repository url in `package.json`, for example, to add git repository url:
+
+```json
+// in package.json
+{
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your/your-repo-url.git"
+  }
+}
+```
