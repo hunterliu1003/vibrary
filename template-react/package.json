@@ -1,0 +1,60 @@
+{
+  "name": "react-storybook-demo-component",
+  "version": "0.0.0",
+  "private": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "source": "src/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "build:storybook": "cross-env NODE_OPTIONS='--openssl-legacy-provider' build-storybook",
+    "coverage": "vitest run --coverage",
+    "dev": "cross-env NODE_OPTIONS='--openssl-legacy-provider' start-storybook -p 6006",
+    "preview": "vite preview",
+    "release": "release-it",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@release-it/conventional-changelog": "^5.0.0",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-vite": "^0.2.2",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^14.3.0",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "babel-loader": "^8.2.5",
+    "cross-env": "^7.0.3",
+    "jsdom": "^20.0.0",
+    "release-it": "^15.2.0",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.3",
+    "vitest": "^0.19.1"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  }
+}
