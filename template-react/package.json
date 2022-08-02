@@ -56,5 +56,8 @@
   "peerDependencies": {
     "react": "*",
     "react-dom": "*"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
