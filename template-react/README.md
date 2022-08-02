@@ -1,6 +1,6 @@
 # vite-react-storybook-lib-starter
 
-A published-ready template for Vue 3 components and composable functions library.
+A published-ready template for React components and composable functions library.
 
 - react
 - vite
