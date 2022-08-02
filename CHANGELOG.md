@@ -1,5 +1,12 @@
 
 
+## [0.3.1](https://github.com/hunterliu1003/vibrary/compare/v0.3.0...v0.3.1) (2022-08-02)
+
+
+### Bug Fixes
+
+* **template-react:** rename .gitignore to _gitignore ([4a3f21c](https://github.com/hunterliu1003/vibrary/commit/4a3f21c37c065cc92f421e62f2f0f7bc6ec87e8d))
+
 # [0.3.0](https://github.com/hunterliu1003/vibrary/compare/v0.2.2...v0.3.0) (2022-08-02)
 
 
