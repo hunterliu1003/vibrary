@@ -9,6 +9,9 @@ A published-ready template for React components and composable functions library
 
 ## Install
 
+> **Warning**
+> Please use node >= 18
+
 Also feel free to use pnpm
 
 ```bash
