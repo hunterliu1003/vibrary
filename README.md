@@ -1,16 +1,12 @@
-# Vibrary
+# Create Vibrary
 
-A published-ready template for Vue 3 components and composable functions library.
+A published-ready template for components and composable functions library.
 
-- pnpm
-- typescript
-- vue 3
 - vite
 - vitest
-- viteplay for documentation
-- @vueuse/core
+- storybook or viteplay for documentation
 
-## Scaffolding Your First Vue 3 Library
+## Scaffolding Your First Library
 
 With NPM:
 
@@ -51,6 +47,20 @@ pnpm create vibrary my-vue-library -- --template vue-ts
 Currently supported template presets include:
 
 - `vue-ts`
+- `react`
+
+Template presets still work in progress:
+
+- `vanilla`
+- `vanilla-ts`
+- `vue`
+- `react-ts`
+- `preact`
+- `preact-ts`
+- `lit`
+- `lit-ts`
+- `svelte`
+- `svelte-ts`
 
 ## Release it!
 
