@@ -1,5 +1,18 @@
 
 
+# [0.3.0](https://github.com/hunterliu1003/vibrary/compare/v0.2.2...v0.3.0) (2022-08-02)
+
+
+### Bug Fixes
+
+* add engines node >= 18 ([17d8f35](https://github.com/hunterliu1003/vibrary/commit/17d8f3537d8b6b0c3f3fcb0bebf7672b929058be))
+
+
+### Features
+
+* add react template support ([3a39bf4](https://github.com/hunterliu1003/vibrary/commit/3a39bf4c2dff2f00a2dc74b44c9ba8e3472d1f1a))
+* add template-react option ([1536c8a](https://github.com/hunterliu1003/vibrary/commit/1536c8a85b437d23aa2dea43ac0b84bf65a7ef3d))
+
 ## [0.2.2](https://github.com/hunterliu1003/vibrary/compare/v0.2.1...v0.2.2) (2022-07-23)
 
 ## [0.2.1](https://github.com/hunterliu1003/vibrary/compare/v0.2.0...v0.2.1) (2022-07-23)
