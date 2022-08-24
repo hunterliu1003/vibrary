@@ -4,7 +4,7 @@ A published-ready template for components and composable functions library.
 
 - vite
 - vitest
-- storybook or viteplay for documentation
+- storybook or [viteplay](https://viteplay-docs.onrender.com/) for documentation
 
 ## Scaffolding Your First Library
 

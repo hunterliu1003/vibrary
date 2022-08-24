@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TheComponent from '../TheComponent.vue'
+import TheComponent from './TheComponent.vue'
 </script>
 
 <template>
@@ -7,5 +7,5 @@ import TheComponent from '../TheComponent.vue'
 </template>
 
 <docs lang="md">
-### Markdown docs for Second example
+### Markdown docs for Basic example
 </docs>

@@ -7,7 +7,7 @@ A published-ready template for Vue 3 components and composable functions library
 - vue 3
 - vite
 - vitest
-- viteplay for documentation
+- [viteplay](https://viteplay-docs.onrender.com/) for documentation
 - @vueuse/core
 
 ## Scripts
