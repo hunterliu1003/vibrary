@@ -1,14 +1,15 @@
 import path from 'path'
+import styleInject from '@senojs/rollup-plugin-style-inject'
+
 import vue from '@vitejs/plugin-vue'
 import { defineConfig } from 'vite'
-import libInjectCss from './scripts/libInjectCss'
 
 const name = 'index'
 
 export default defineConfig({
   plugins: [
     vue(),
-    libInjectCss(),
+    styleInject(),
   ],
   publicDir: false,
   build: {

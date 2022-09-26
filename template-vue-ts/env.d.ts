@@ -1,0 +1,1 @@
+declare module '@senojs/rollup-plugin-style-inject'

@@ -38,6 +38,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",
     "@release-it/conventional-changelog": "^5.0.0",
+    "@senojs/rollup-plugin-style-inject": "^0.1.1",
     "@types/node": "^18.0.0",
     "@vitejs/plugin-vue": "^3.0.1",
     "@viteplay/plugin": "^0.2.1",
