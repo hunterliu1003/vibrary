@@ -1,5 +1,13 @@
 
 
+## [0.4.1](https://github.com/hunterliu1003/vibrary/compare/v0.4.0...v0.4.1) (2022-09-26)
+
+
+### Bug Fixes
+
+* import path ([c084e24](https://github.com/hunterliu1003/vibrary/commit/c084e2413b1c90eb7f2bb5f20a7d6819ead011ee))
+* rollup-plugin-style-inject ([ec81013](https://github.com/hunterliu1003/vibrary/commit/ec810135643b8a41485e8046c5196c34b4d42754))
+
 # [0.4.0](https://github.com/hunterliu1003/vibrary/compare/v0.3.2...v0.4.0) (2022-08-24)
 
 
